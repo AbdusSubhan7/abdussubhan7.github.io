@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdus Subhan | Senior Finance & ERP Consultant | Dubai, UAE</title>
+<meta name="description" content="CPA Qualified Finance Manager & ERP Implementation Expert with 20+ years UAE experience. SAP, Odoo, CETEC specialist. Available for consulting engagements.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #080c18;
+  --navy-2: #0c1220;
+  --navy-3: #101828;
+  --navy-4: #162035;
+  --navy-5: #1e2d47;
+  --gold: #c8a84b;
+  --gold-light: #e2c46e;
+  --gold-pale: #f0dfa0;
+  --gold-dark: #8a6f2e;
+  --gold-glow: rgba(200,168,75,0.12);
+  --white: #f7f5ef;
+  --off-white: #e8e4d8;
+  --gray: #8a94a6;
+  --gray-light: #b8c2d4;
+  --border: rgba(200,168,75,0.15);
+  --border-bright: rgba(200,168,75,0.45);
+  --card-bg: rgba(16,24,40,0.9);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden;line-height:1.6;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:var(--navy);}
+::-webkit-scrollbar-thumb{background:var(--gold-dark);border-radius:2px;}
+::selection{background:var(--gold);color:var(--navy);}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 5rem;background:rgba(8,12,24,0.95);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:padding 0.3s;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--gold);letter-spacing:3px;text-decoration:none;}
+.nav-links{display:flex;gap:2.2rem;list-style:none;align-items:center;}
+.nav-links a{font-size:0.68rem;font-weight:600;letter-spacing:2.5px;color:var(--gray-light);text-decoration:none;text-transform:uppercase;transition:color 0.2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.3s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.nav-cta{background:var(--gold);color:var(--navy);font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.6rem 1.5rem;border-radius:2px;text-decoration:none;transition:all 0.2s;}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px);}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:0 5rem;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%, rgba(200,168,75,0.07) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(30,45,71,0.8) 0%, transparent 50%);z-index:0;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,168,75,0.04) 1px, transparent 1px),linear-gradient(90deg, rgba(200,168,75,0.04) 1px, transparent 1px);background-size:60px 60px;z-index:0;}
+.hero-content{position:relative;z-index:2;max-width:700px;}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(200,168,75,0.1);border:1px solid var(--border-bright);padding:0.45rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero-badge span{font-size:0.65rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(1.3);}}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:4.8rem;font-weight:600;line-height:1.1;margin-bottom:0.5rem;letter-spacing:1px;}
+.hero h1 span{color:var(--gold);font-style:italic;}
+.hero-title{font-size:0.78rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gray);margin-bottom:1.5rem;padding-left:2px;}
+.hero-desc{font-size:1rem;font-weight:300;color:var(--gray-light);line-height:1.8;max-width:560px;margin-bottom:2.5rem;}
+.hero-stats{display:flex;gap:3rem;margin-bottom:3rem;}
+.stat-item{text-align:left;}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:var(--gold);line-height:1;}
+.stat-label{font-size:0.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-top:4px;}
+.hero-actions{display:flex;gap:1rem;align-items:center;}
+.btn-primary{background:var(--gold);color:var(--navy);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.9rem 2.2rem;border-radius:2px;text-decoration:none;transition:all 0.25s;border:none;cursor:pointer;}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,168,75,0.3);}
+.btn-ghost{background:transparent;color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.9rem 2.2rem;border-radius:2px;text-decoration:none;border:1px solid var(--border-bright);transition:all 0.25s;}
+.btn-ghost:hover{background:var(--gold-glow);transform:translateY(-2px);}
+.hero-right{position:absolute;right:5rem;top:50%;transform:translateY(-50%);z-index:2;}
+.hero-card{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:2rem;width:300px;backdrop-filter:blur(20px);}
+.hero-card-title{font-size:0.65rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.cert-row{display:flex;align-items:center;gap:0.8rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.cert-row:last-child{border-bottom:none;}
+.cert-icon{width:34px;height:34px;background:var(--gold-glow);border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:700;color:var(--gold);letter-spacing:1px;flex-shrink:0;}
+.cert-name{font-size:0.78rem;font-weight:600;color:var(--white);}
+.cert-body{font-size:0.65rem;color:var(--gray);margin-top:2px;}
+.scroll-indicator{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;opacity:0.5;}
+.scroll-indicator span{font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--gray);}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom, var(--gold), transparent);animation:scrollAnim 2s infinite;}
+@keyframes scrollAnim{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}50.01%{transform:scaleY(1);transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
+
+/* ── SECTIONS ── */
+section{padding:7rem 5rem;}
+.section-label{font-size:0.65rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:600;line-height:1.2;margin-bottom:1rem;}
+.section-title span{color:var(--gold);font-style:italic;}
+.section-line{width:60px;height:2px;background:var(--gold);margin-bottom:3rem;}
+.section-header{margin-bottom:3.5rem;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
+
+/* ── ABOUT ── */
+#about{background:var(--navy-2);}
+.about-text p{font-size:0.95rem;font-weight:300;color:var(--gray-light);line-height:1.9;margin-bottom:1.2rem;}
+.about-text strong{color:var(--gold);font-weight:600;}
+.about-highlights{display:flex;flex-direction:column;gap:1rem;}
+.highlight-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem;background:rgba(200,168,75,0.05);border:1px solid var(--border);border-radius:4px;transition:border-color 0.2s;}
+.highlight-item:hover{border-color:var(--border-bright);}
+.hl-icon{width:40px;height:40px;background:var(--gold-glow);border:1px solid var(--border-bright);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hl-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.hl-title{font-size:0.8rem;font-weight:700;letter-spacing:1px;color:var(--white);margin-bottom:3px;}
+.hl-desc{font-size:0.75rem;color:var(--gray);line-height:1.5;}
+
+/* ── EXPERTISE CARDS ── */
+#expertise{background:var(--navy);}
+.expertise-card{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden;}
+.expertise-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform 0.4s;}
+.expertise-card:hover{border-color:var(--border-bright);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+.expertise-card:hover::before{transform:scaleX(1);}
+.card-icon-wrap{width:50px;height:50px;background:var(--gold-glow);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;}
+.card-icon-wrap svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.card-tag{font-size:0.62rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+.card-title{font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:0.8rem;}
+.card-desc{font-size:0.78rem;color:var(--gray);line-height:1.7;margin-bottom:1.2rem;}
+.card-list{list-style:none;display:flex;flex-direction:column;gap:0.4rem;}
+.card-list li{font-size:0.73rem;color:var(--gray-light);padding-left:1rem;position:relative;}
+.card-list li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:0.6rem;}
+
+/* ── ERP MODULES ── */
+#erp{background:var(--navy-2);}
+.erp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:4rem;}
+.erp-vendor{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:1.5rem;text-align:center;transition:all 0.3s;cursor:default;}
+.erp-vendor:hover{border-color:var(--border-bright);background:rgba(200,168,75,0.07);}
+.erp-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--gold);margin-bottom:0.5rem;}
+.erp-name{font-size:0.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:0.8rem;}
+.erp-badge{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:2px;}
+.erp-badge.impl{background:rgba(200,168,75,0.15);color:var(--gold);border:1px solid var(--border);}
+.erp-badge.prof{background:rgba(30,100,70,0.2);color:#4ecb8d;border:1px solid rgba(78,203,141,0.2);}
+.module-tabs{display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;}
+.tab-btn{font-size:0.68rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:0.6rem 1.4rem;border-radius:2px;border:1px solid var(--border);background:transparent;color:var(--gray);cursor:pointer;transition:all 0.2s;}
+.tab-btn.active,.tab-btn:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);}
+.module-panel{display:none;animation:fadeIn 0.3s ease;}
+.module-panel.active{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.module-item{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:1.4rem;}
+.module-item-title{font-size:0.8rem;font-weight:700;color:var(--white);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+.module-item-title::before{content:'';width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.module-item ul{list-style:none;display:flex;flex-direction:column;gap:0.35rem;}
+.module-item li{font-size:0.72rem;color:var(--gray);padding-left:0.9rem;position:relative;}
+.module-item li::before{content:'–';position:absolute;left:0;color:var(--gold-dark);}
+
+/* ── IT INFRASTRUCTURE ── */
+#it{background:var(--navy);}
+.it-category{margin-bottom:3rem;}
+.it-cat-title{font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;padding-bottom:0.8rem;border-bottom:1px solid var(--border);}
+.it-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+.it-item{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:1.2rem;transition:all 0.2s;}
+.it-item:hover{border-color:var(--border-bright);transform:translateY(-2px);}
+.it-item-name{font-size:0.82rem;font-weight:600;color:var(--white);margin-bottom:0.5rem;}
+.it-item-desc{font-size:0.7rem;color:var(--gray);line-height:1.6;}
+.it-badge{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:2px;margin-top:0.5rem;background:rgba(200,168,75,0.1);color:var(--gold);border:1px solid var(--border);}
+
+/* ── EXPERIENCE TIMELINE ── */
+#experience{background:var(--navy-2);}
+.timeline{position:relative;padding-left:2.5rem;}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom, var(--gold), rgba(200,168,75,0.1));}
+.timeline-item{position:relative;padding-bottom:3.5rem;}
+.timeline-dot{position:absolute;left:-2.5rem;top:6px;width:12px;height:12px;background:var(--gold);border-radius:50%;transform:translateX(50%);border:3px solid var(--navy-2);}
+.timeline-dot.current{box-shadow:0 0 0 4px rgba(200,168,75,0.2);animation:dotPulse 2s infinite;}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 4px rgba(200,168,75,0.2);}50%{box-shadow:0 0 0 8px rgba(200,168,75,0.05);}}
+.timeline-date{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;}
+.timeline-company{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--white);margin-bottom:0.2rem;}
+.timeline-role{font-size:0.78rem;font-weight:600;letter-spacing:1px;color:var(--gray-light);margin-bottom:0.3rem;}
+.timeline-industry{font-size:0.68rem;font-weight:500;color:var(--gray);margin-bottom:1rem;font-style:italic;}
+.timeline-body{font-size:0.8rem;color:var(--gray-light);line-height:1.7;margin-bottom:1rem;}
+.timeline-tags{display:flex;gap:0.5rem;flex-wrap:wrap;}
+.timeline-tag{font-size:0.6rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;background:rgba(200,168,75,0.08);border:1px solid var(--border);color:var(--gold);border-radius:2px;}
+.timeline-achievements{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:1rem;}
+.ta-item{font-size:0.73rem;color:var(--gray-light);padding:0.6rem 0.8rem;background:rgba(255,255,255,0.03);border-left:2px solid var(--gold);border-radius:0 2px 2px 0;}
+
+/* ── SKILLS ── */
+#skills{background:var(--navy);}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
+.skill-group-title{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
+.skill-bar-wrap{margin-bottom:1rem;}
+.skill-bar-header{display:flex;justify-content:space-between;margin-bottom:0.4rem;}
+.skill-bar-name{font-size:0.75rem;font-weight:600;color:var(--white);}
+.skill-bar-pct{font-size:0.7rem;font-weight:600;color:var(--gold-dark);}
+.skill-bar-track{height:4px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;}
+.skill-bar-fill{height:100%;background:linear-gradient(90deg, var(--gold-dark), var(--gold-light));border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(0.22,1,0.36,1);}
+.skill-bar-fill.animated{transform:scaleX(1);}
+.tags-cloud{display:flex;flex-wrap:wrap;gap:0.6rem;}
+.skill-tag{font-size:0.68rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:0.45rem 1rem;background:rgba(200,168,75,0.07);border:1px solid var(--border);color:var(--gray-light);border-radius:2px;transition:all 0.2s;}
+.skill-tag:hover{background:rgba(200,168,75,0.15);border-color:var(--border-bright);color:var(--gold);}
+
+/* ── ACHIEVEMENTS ── */
+#achievements{background:var(--navy-2);}
+.achievement-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+.achievement-card{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:2rem;text-align:center;position:relative;overflow:hidden;transition:all 0.3s;}
+.achievement-card:hover{border-color:var(--border-bright);transform:translateY(-4px);}
+.ach-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--gold);line-height:1;}
+.ach-unit{font-size:0.8rem;color:var(--gold-dark);font-weight:600;}
+.ach-label{font-size:0.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);margin-top:0.5rem;line-height:1.4;}
+
+/* ── CONTACT ── */
+#contact{background:var(--navy-3);position:relative;overflow:hidden;}
+#contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%, rgba(200,168,75,0.05) 0%, transparent 70%);}
+.contact-wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem;}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;}
+.contact-icon{width:44px;height:44px;background:var(--gold-glow);border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.contact-label{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:3px;}
+.contact-value{font-size:0.9rem;font-weight:500;color:var(--white);}
+.contact-value a{color:var(--gold);text-decoration:none;}
+.contact-form{display:flex;flex-direction:column;gap:1.2rem;}
+.form-group{display:flex;flex-direction:column;gap:0.4rem;}
+.form-label{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray);}
+.form-input,.form-textarea{background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--white);font-family:'Montserrat',sans-serif;font-size:0.82rem;padding:0.8rem 1rem;border-radius:2px;outline:none;transition:border-color 0.2s;width:100%;}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(255,255,255,0.2);}
+.form-input:focus,.form-textarea:focus{border-color:var(--border-bright);}
+.form-textarea{resize:vertical;min-height:130px;}
+.form-submit{background:var(--gold);color:var(--navy);font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1rem;border:none;border-radius:2px;cursor:pointer;transition:all 0.2s;}
+.form-submit:hover{background:var(--gold-light);transform:translateY(-2px);}
+.form-note{font-size:0.7rem;color:var(--gray);text-align:center;margin-top:-0.5rem;}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:2.5rem 5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--gold);letter-spacing:3px;}
+.footer-copy{font-size:0.65rem;color:var(--gray);letter-spacing:1px;}
+.footer-tagline{font-size:0.65rem;color:var(--gray);letter-spacing:2px;text-transform:uppercase;}
+
+/* ── DIVIDER ── */
+.gold-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  nav{padding:1.1rem 2.5rem;}
+  .hero{padding:0 2.5rem;}
+  .hero h1{font-size:3.8rem;}
+  .hero-right{display:none;}
+  section{padding:5rem 2.5rem;}
+  .erp-grid,.four-col,.achievement-grid{grid-template-columns:repeat(2,1fr);}
+  .it-grid{grid-template-columns:repeat(2,1fr);}
+  footer{padding:2rem 2.5rem;}
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .hero h1{font-size:2.8rem;}
+  .hero-stats{gap:1.5rem;}
+  .two-col,.skills-grid,.contact-wrap{grid-template-columns:1fr;}
+  .three-col,.module-panel.active,.erp-grid,.achievement-grid,.it-grid{grid-template-columns:1fr;}
+  .timeline-achievements{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">A · S</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#erp">ERP</a></li>
+    <li><a href="#it">IT Solutions</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-dot"></div>
+      <span>Available for Consulting Engagements · Dubai, UAE</span>
+    </div>
+    <div class="hero-title">CPA · CPAA · ACCA Finalist</div>
+    <h1>Abdus<br><span>Subhan</span></h1>
+    <p style="font-size:0.78rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gray-light);margin-bottom:1.5rem;">Senior Finance & ERP Consultant</p>
+    <p class="hero-desc">20+ years of transforming businesses across UAE and GCC through world-class financial management, multi-platform ERP implementation, and enterprise IT infrastructure — from SAP HANA to complete server deployments.</p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">20<span style="font-size:1.6rem;color:var(--gold-dark);">+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">15<span style="font-size:1.6rem;color:var(--gold-dark);">+</span></div>
+        <div class="stat-label">Years in UAE</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">8<span style="font-size:1.6rem;color:var(--gold-dark);">+</span></div>
+        <div class="stat-label">ERP Platforms</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Engage Now</a>
+      <a href="#experience" class="btn-ghost">View Track Record</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-title">Credentials</div>
+      <div class="cert-row">
+        <div class="cert-icon">CPA</div>
+        <div><div class="cert-name">Certified Public Accountant</div><div class="cert-body">Institute of CPA, Pakistan · Since 2013</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-icon">CPAA</div>
+        <div><div class="cert-name">Certified Public Accountants</div><div class="cert-body">Association UK · Since 2013</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-icon">ACCA</div>
+        <div><div class="cert-name">ACCA Finalist</div><div class="cert-body">Association of Chartered Certified Accountants, UK</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-icon">B.C</div>
+        <div><div class="cert-name">Bachelor of Commerce</div><div class="cert-body">Punjab University, Lahore</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">Who I Am</div>
+  <div class="section-title">Finance Strategist.<br><span>Technology Enabler.</span></div>
+  <div class="section-line"></div>
+  <div class="two-col">
+    <div class="about-text">
+      <p>With over <strong>20 years of progressive experience</strong> — including <strong>15+ years in the UAE</strong> — I am a senior finance professional and ERP consultant who bridges the gap between financial strategy and operational technology.</p>
+      <p>My career spans <strong>manufacturing, defense aerospace, wood production, investment banking, brokerage, and high-tech electronics</strong> across the GCC. This breadth gives me a unique ability to deliver solutions that are both commercially astute and technically precise.</p>
+      <p>I hold <strong>CPA and CPAA qualifications</strong> and am an ACCA Finalist, supported by deep expertise in <strong>IFRS, IAS, US GAAP</strong>, and full GCC regulatory compliance including <strong>VAT, Corporate Tax, and Excise Tax</strong>.</p>
+      <p>From implementing <strong>SAP HANA and Odoo</strong> to deploying complete server infrastructure, firewalls, NAS systems, and CCTV — I deliver end-to-end enterprise solutions that drive measurable results.</p>
+    </div>
+    <div class="about-highlights">
+      <div class="highlight-item">
+        <div class="hl-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div><div class="hl-title">Multi-Industry Expertise</div><div class="hl-desc">Manufacturing · Aerospace & Defense · Electronics · Investment Banking · Wood Production · FZCO</div></div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
+        <div><div class="hl-title">Full ERP Lifecycle</div><div class="hl-desc">Complete implementation from Chart of Accounts design to go-live, training, and post-deployment support</div></div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
+        <div><div class="hl-title">Regulatory Mastery</div><div class="hl-desc">UAE Corporate Tax · VAT · Excise Tax · Customs · IFRS · IAS · US GAAP · WPS Compliance</div></div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div><div class="hl-title">Proven Cost Reduction</div><div class="hl-desc">Achieved 15% overhead cost reduction and 50% improved EU supplier credit limits through strategic finance operations</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="section-label">Core Domains</div>
+  <div class="section-title">Areas of <span>Expertise</span></div>
+  <div class="section-line"></div>
+  <div class="three-col">
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="card-tag">Domain 01</div>
+      <div class="card-title">Financial Management</div>
+      <div class="card-desc">Complete financial oversight from daily operations to strategic board-level reporting, across single entities and complex group structures.</div>
+      <ul class="card-list">
+        <li>Financial Statements (IFRS, IAS, US GAAP)</li>
+        <li>Group Consolidation & Reporting</li>
+        <li>Cash Flow Management & Forecasting</li>
+        <li>Budgeting & Variance Analysis</li>
+        <li>Cost Control & Reduction Strategies</li>
+        <li>Business Valuation Models</li>
+        <li>Accounts Payable & Receivable</li>
+        <li>Payroll & WPS Compliance</li>
+      </ul>
+    </div>
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
+      <div class="card-tag">Domain 02</div>
+      <div class="card-title">ERP Implementation</div>
+      <div class="card-desc">End-to-end ERP deployment across all leading platforms — from requirements analysis and customization to go-live and staff training.</div>
+      <ul class="card-list">
+        <li>SAP Business One & SAP HANA</li>
+        <li>Odoo (Full Suite)</li>
+        <li>CETEC ERP</li>
+        <li>Pegasus, QuickBooks, Tally</li>
+        <li>Zoho Books, Peachtree</li>
+        <li>Chart of Accounts Design</li>
+        <li>Process & Report Customization</li>
+        <li>Data Migration & Go-Live</li>
+      </ul>
+    </div>
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+      <div class="card-tag">Domain 03</div>
+      <div class="card-title">IT Infrastructure</div>
+      <div class="card-desc">Complete enterprise IT setup — servers, network security, surveillance, and storage — from planning to deployment and maintenance.</div>
+      <ul class="card-list">
+        <li>Server Setup & Configuration</li>
+        <li>Firewall & Network Security</li>
+        <li>NAS Storage Solutions</li>
+        <li>CCTV & IP Surveillance</li>
+        <li>IT Asset Sales & Procurement</li>
+        <li>Network Infrastructure</li>
+        <li>System Administration</li>
+        <li>Hardware Consulting</li>
+      </ul>
+    </div>
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="card-tag">Domain 04</div>
+      <div class="card-title">Risk & Compliance</div>
+      <div class="card-desc">Comprehensive GCC regulatory compliance, internal control frameworks, and audit preparation for UAE businesses.</div>
+      <ul class="card-list">
+        <li>UAE Corporate Tax Compliance</li>
+        <li>VAT & Excise Tax Filing</li>
+        <li>Internal & External Audit</li>
+        <li>Internal Controls & SOPs</li>
+        <li>Bank Facility Management</li>
+        <li>AML/KYC Compliance</li>
+        <li>Financial Policy Development</li>
+        <li>Risk Assessment Frameworks</li>
+      </ul>
+    </div>
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="card-tag">Domain 05</div>
+      <div class="card-title">CRM & Procurement</div>
+      <div class="card-desc">Streamlining client relationship workflows and procurement operations through technology-driven automation and process design.</div>
+      <ul class="card-list">
+        <li>CRM System Configuration</li>
+        <li>Sales Pipeline Automation</li>
+        <li>Procurement Module Setup</li>
+        <li>Supplier Management</li>
+        <li>Purchase Order Workflows</li>
+        <li>Inventory Control Systems</li>
+        <li>Warehouse Management</li>
+        <li>Working Capital Optimization</li>
+      </ul>
+    </div>
+    <div class="expertise-card">
+      <div class="card-icon-wrap"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <div class="card-tag">Domain 06</div>
+      <div class="card-title">Financial Analysis</div>
+      <div class="card-desc">Advanced financial modeling, feasibility studies, and investment analysis to support high-stakes decision making.</div>
+      <ul class="card-list">
+        <li>Business Valuation & Modeling</li>
+        <li>Feasibility & Profitability Studies</li>
+        <li>MIS & Management Reporting</li>
+        <li>KPI Dashboard Design</li>
+        <li>Asset Valuation</li>
+        <li>Investment Banking Analytics</li>
+        <li>Market Expansion Analysis</li>
+        <li>Net Capital Reporting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- ERP MODULES -->
+<section id="erp">
+  <div class="section-label">Technology Stack</div>
+  <div class="section-title">ERP <span>Platforms & Modules</span></div>
+  <div class="section-line"></div>
+  <div class="erp-grid">
+    <div class="erp-vendor"><div class="erp-logo">SAP</div><div class="erp-name">SAP Business One & HANA</div><span class="erp-badge impl">Implementation</span></div>
+    <div class="erp-vendor"><div class="erp-logo">Odoo</div><div class="erp-name">Odoo ERP Suite</div><span class="erp-badge impl">Implementation</span></div>
+    <div class="erp-vendor"><div class="erp-logo">CETEC</div><div class="erp-name">CETEC ERP</div><span class="erp-badge impl">Implementation</span></div>
+    <div class="erp-vendor"><div class="erp-logo">QB</div><div class="erp-name">QuickBooks</div><span class="erp-badge prof">Proficient</span></div>
+    <div class="erp-vendor"><div class="erp-logo">Tally</div><div class="erp-name">Tally ERP</div><span class="erp-badge prof">Proficient</span></div>
+    <div class="erp-vendor"><div class="erp-logo">Zoho</div><div class="erp-name">Zoho Books</div><span class="erp-badge prof">Proficient</span></div>
+    <div class="erp-vendor"><div class="erp-logo">PGS</div><div class="erp-name">Pegasus</div><span class="erp-badge impl">Migration Expert</span></div>
+    <div class="erp-vendor"><div class="erp-logo">PCH</div><div class="erp-name">Peachtree</div><span class="erp-badge prof">Proficient</span></div>
+  </div>
+  <div class="module-tabs">
+    <button class="tab-btn active" onclick="showModule('finance')">Finance & Accounting</button>
+    <button class="tab-btn" onclick="showModule('crm')">CRM & Sales</button>
+    <button class="tab-btn" onclick="showModule('procurement')">Procurement</button>
+    <button class="tab-btn" onclick="showModule('warehouse')">Warehouse</button>
+    <button class="tab-btn" onclick="showModule('payroll')">Payroll & HR</button>
+    <button class="tab-btn" onclick="showModule('reporting')">Reporting & BI</button>
+  </div>
+  <div id="mod-finance" class="module-panel active">
+    <div class="module-item"><div class="module-item-title">General Ledger</div><ul><li>Chart of Accounts design & customization</li><li>Journal entries & period close</li><li>Multi-currency handling (4+ currencies)</li><li>Inter-company transactions</li><li>Consolidated group accounts</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Accounts Receivable</div><ul><li>Customer invoicing & billing cycles</li><li>Aging analysis reports</li><li>Credit limit management</li><li>Collection workflows</li><li>Revenue recognition (IFRS 15)</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Accounts Payable</div><ul><li>Vendor invoice processing</li><li>Payment run & scheduling</li><li>Three-way matching (PO/GR/Invoice)</li><li>Supplier reconciliation</li><li>Early payment discounts</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Fixed Assets</div><ul><li>Asset register setup & maintenance</li><li>Depreciation (straight-line, reducing balance)</li><li>Asset revaluation (IAS 16)</li><li>Disposal & write-off management</li><li>CAPEX vs OPEX classification</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Tax Management</div><ul><li>UAE VAT configuration & filing</li><li>Corporate Tax (CT) setup</li><li>Excise Tax compliance</li><li>GCC country tax mapping</li><li>Tax audit trail & reporting</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Cash Management</div><ul><li>Bank account integration</li><li>Cash flow forecasting models</li><li>Bank reconciliation automation</li><li>Multi-bank facility management</li><li>FX exposure management</li></ul></div>
+  </div>
+  <div id="mod-crm" class="module-panel">
+    <div class="module-item"><div class="module-item-title">Lead Management</div><ul><li>Lead capture & qualification workflows</li><li>Pipeline stage configuration</li><li>Lead scoring setup</li><li>Source tracking & attribution</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Customer Database</div><ul><li>Customer segmentation setup</li><li>Contact hierarchy management</li><li>Activity & interaction logging</li><li>Document attachment management</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Sales Order Processing</div><ul><li>Quote-to-order automation</li><li>Pricing rules & discounts</li><li>Sales order approval workflows</li><li>Delivery & invoicing linkage</li></ul></div>
+    <div class="module-item"><div class="module-item-title">After-Sales Service</div><ul><li>Warranty & service contract setup</li><li>Customer complaint tracking</li><li>Service ticket management</li><li>SLA monitoring</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Sales Reporting</div><ul><li>Revenue by customer/product/region</li><li>Sales rep performance dashboards</li><li>Win/loss analysis</li><li>Forecast accuracy tracking</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Integration</div><ul><li>CRM to Finance linkage</li><li>Automated invoice generation</li><li>Customer credit limit sync</li><li>Collection status visibility in CRM</li></ul></div>
+  </div>
+  <div id="mod-procurement" class="module-panel">
+    <div class="module-item"><div class="module-item-title">Purchase Requisition</div><ul><li>Multi-level approval workflows</li><li>Budget check before approval</li><li>Department-wise requisitions</li><li>Recurring purchase templates</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Supplier Management</div><ul><li>Vendor onboarding & vetting</li><li>Supplier scorecards & KPIs</li><li>Price history tracking</li><li>Preferred vendor rules</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Purchase Orders</div><ul><li>PO generation & approval</li><li>Partial delivery tracking</li><li>Foreign currency POs</li><li>Import documentation integration</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Goods Receipt</div><ul><li>GRN matching to PO</li><li>Quality inspection checkpoints</li><li>Automatic stock update</li><li>Return-to-vendor processing</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Cost Control</div><ul><li>Landed cost calculation</li><li>Customs & freight allocation</li><li>Budget vs actual tracking</li><li>Cost center allocation</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Reporting</div><ul><li>Open PO aging report</li><li>Vendor performance analysis</li><li>Spend analysis by category</li><li>Purchase cycle time reporting</li></ul></div>
+  </div>
+  <div id="mod-warehouse" class="module-panel">
+    <div class="module-item"><div class="module-item-title">Inventory Setup</div><ul><li>Multi-warehouse configuration</li><li>Bin & location mapping</li><li>Item master with UOM</li><li>Barcode & serial number tracking</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Stock Control</div><ul><li>FIFO/LIFO/Average cost valuation</li><li>Reorder point automation</li><li>Min/max stock levels</li><li>Slow-moving stock alerts</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Movements</div><ul><li>Inbound & outbound processing</li><li>Inter-warehouse transfers</li><li>Stock adjustment workflows</li><li>Quarantine & hold zones</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Cycle Counts</div><ul><li>Physical inventory planning</li><li>Cycle count scheduling</li><li>Variance capture & approval</li><li>Audit trail maintenance</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Manufacturing Integration</div><ul><li>Bill of Materials (BOM) setup</li><li>Production order consumption</li><li>Work-in-progress tracking</li><li>Finished goods registration</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Reporting</div><ul><li>Real-time stock valuation</li><li>Inventory aging analysis</li><li>Dead stock reporting</li><li>Turn rate & DSI calculations</li></ul></div>
+  </div>
+  <div id="mod-payroll" class="module-panel">
+    <div class="module-item"><div class="module-item-title">Payroll Setup</div><ul><li>UAE salary structures & grading</li><li>WPS (Wages Protection System)</li><li>Basic + allowances configuration</li><li>Overtime & shift pay rules</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Leave Management</div><ul><li>Annual leave accrual (UAE Labor Law)</li><li>Leave request & approval workflow</li><li>Leave encashment calculation</li><li>Public holiday management</li></ul></div>
+    <div class="module-item"><div class="module-item-title">End of Service</div><ul><li>Gratuity calculation (UAE/GCC)</li><li>EOSB provision accounting</li><li>Settlement processing</li><li>Final settlement documentation</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Time & Attendance</div><ul><li>Biometric integration</li><li>Shift scheduling</li><li>Absenteeism tracking</li><li>Timesheet approval workflows</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Compliance</div><ul><li>MOHRE compliance reporting</li><li>DEWS/GPSSA integration</li><li>Visa & permit tracking</li><li>Employee file management</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Payroll Reporting</div><ul><li>Payslip generation & distribution</li><li>Cost center payroll allocation</li><li>Year-end payroll reports</li><li>Audit-ready payroll registers</li></ul></div>
+  </div>
+  <div id="mod-reporting" class="module-panel">
+    <div class="module-item"><div class="module-item-title">Financial Reports</div><ul><li>Profit & Loss (multi-period)</li><li>Balance Sheet & Notes</li><li>Cash Flow Statement</li><li>Statement of Changes in Equity</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Management Reports</div><ul><li>Executive MIS dashboards</li><li>Departmental P&L</li><li>Budget vs Actual variance</li><li>Rolling forecast reports</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Custom Report Design</div><ul><li>Crystal Reports / SSRS</li><li>Excel-linked live reports</li><li>Pivot table dashboards</li><li>KPI scorecards</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Tax Reports</div><ul><li>VAT Return (FTA format)</li><li>Corporate Tax computation</li><li>Transfer pricing documentation</li><li>WHT reconciliation</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Operational BI</div><ul><li>Sales performance analytics</li><li>Inventory turnover analysis</li><li>Customer profitability</li><li>Supplier spend analysis</li></ul></div>
+    <div class="module-item"><div class="module-item-title">Audit Support</div><ul><li>Audit file preparation</li><li>Trial balance reconciliation</li><li>Workpaper documentation</li><li>Management letter responses</li></ul></div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- IT INFRASTRUCTURE -->
+<section id="it">
+  <div class="section-label">Technology Solutions</div>
+  <div class="section-title">IT Infrastructure <span>& Solutions</span></div>
+  <div class="section-line"></div>
+
+  <div class="it-category">
+    <div class="it-cat-title">Server Infrastructure</div>
+    <div class="it-grid">
+      <div class="it-item"><div class="it-item-name">Windows Server</div><div class="it-item-desc">Active Directory, DNS, DHCP, Group Policy, domain setup for enterprise environments.</div><span class="it-badge">Setup & Config</span></div>
+      <div class="it-item"><div class="it-item-name">Linux Server</div><div class="it-item-desc">Ubuntu/CentOS deployment, web hosting, application server configuration, SSH management.</div><span class="it-badge">Deployment</span></div>
+      <div class="it-item"><div class="it-item-name">Virtualization</div><div class="it-item-desc">VMware & Hyper-V virtual machine setup, resource allocation, snapshot management.</div><span class="it-badge">Setup & Config</span></div>
+      <div class="it-item"><div class="it-item-name">Cloud Servers</div><div class="it-item-desc">AWS, Azure, and private cloud server provisioning for ERP and business applications.</div><span class="it-badge">Cloud</span></div>
+    </div>
+  </div>
+
+  <div class="it-category">
+    <div class="it-cat-title">Network & Security</div>
+    <div class="it-grid">
+      <div class="it-item"><div class="it-item-name">Firewall Setup</div><div class="it-item-desc">Cisco, Fortinet, Sophos, and pfSense firewall configuration, rules, VPN, and intrusion prevention.</div><span class="it-badge">Configuration</span></div>
+      <div class="it-item"><div class="it-item-name">Network Design</div><div class="it-item-desc">LAN/WAN architecture, VLAN segmentation, wireless enterprise networks, structured cabling.</div><span class="it-badge">Design & Deploy</span></div>
+      <div class="it-item"><div class="it-item-name">VPN Solutions</div><div class="it-item-desc">Site-to-site and remote access VPN for multi-branch connectivity across UAE offices.</div><span class="it-badge">Setup</span></div>
+      <div class="it-item"><div class="it-item-name">Network Security</div><div class="it-item-desc">Endpoint protection, email security, patch management, and security policy enforcement.</div><span class="it-badge">Implementation</span></div>
+    </div>
+  </div>
+
+  <div class="it-category">
+    <div class="it-cat-title">Storage & Backup</div>
+    <div class="it-grid">
+      <div class="it-item"><div class="it-item-name">NAS Solutions</div><div class="it-item-desc">Synology, QNAP, and Western Digital NAS deployment — RAID configuration, user access, and shared storage.</div><span class="it-badge">Deployment</span></div>
+      <div class="it-item"><div class="it-item-name">Backup Strategy</div><div class="it-item-desc">3-2-1 backup architecture, automated scheduled backups, disaster recovery planning and testing.</div><span class="it-badge">Design</span></div>
+      <div class="it-item"><div class="it-item-name">SAN Storage</div><div class="it-item-desc">Enterprise SAN configuration for high-performance applications and database servers.</div><span class="it-badge">Configuration</span></div>
+      <div class="it-item"><div class="it-item-name">Cloud Backup</div><div class="it-item-desc">Hybrid cloud backup to Azure Blob, AWS S3, and Backblaze B2 for offsite redundancy.</div><span class="it-badge">Cloud</span></div>
+    </div>
+  </div>
+
+  <div class="it-category">
+    <div class="it-cat-title">CCTV & Physical Security</div>
+    <div class="it-grid">
+      <div class="it-item"><div class="it-item-name">IP Camera Systems</div><div class="it-item-desc">Hikvision, Dahua, and Axis IP camera planning, PoE switch setup, and NVR configuration.</div><span class="it-badge">Installation</span></div>
+      <div class="it-item"><div class="it-item-name">NVR/DVR Setup</div><div class="it-item-desc">Network video recorder configuration, storage calculation, motion detection, and remote viewing.</div><span class="it-badge">Setup</span></div>
+      <div class="it-item"><div class="it-item-name">Access Control</div><div class="it-item-desc">Door access control systems, biometric readers, and visitor management integration.</div><span class="it-badge">Integration</span></div>
+      <div class="it-item"><div class="it-item-name">Remote Monitoring</div><div class="it-item-desc">Mobile app setup, cloud-connected surveillance, alert configuration for 24/7 monitoring.</div><span class="it-badge">Configuration</span></div>
+    </div>
+  </div>
+
+  <div class="it-category">
+    <div class="it-cat-title">IT Asset Sales & Procurement</div>
+    <div class="it-grid">
+      <div class="it-item"><div class="it-item-name">Complete IT Procurement</div><div class="it-item-desc">End-to-end IT asset sourcing, vendor negotiation, and supply chain for corporate IT requirements.</div><span class="it-badge">Sales</span></div>
+      <div class="it-item"><div class="it-item-name">Hardware Consulting</div><div class="it-item-desc">Technology stack advisory, capacity planning, and budget-optimized hardware selection for businesses.</div><span class="it-badge">Consulting</span></div>
+      <div class="it-item"><div class="it-item-name">Servers & Networking</div><div class="it-item-desc">Dell, HP, Cisco, Ubiquiti, and Juniper — new and refurbished enterprise-grade equipment supply.</div><span class="it-badge">Supply</span></div>
+      <div class="it-item"><div class="it-item-name">Lifecycle Management</div><div class="it-item-desc">IT asset register, warranty management, refresh planning, and compliant disposal services.</div><span class="it-badge">Management</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Career Journey</div>
+  <div class="section-title">Professional <span>Experience</span></div>
+  <div class="section-line"></div>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot current"></div>
+      <div class="timeline-date">June 2025 – Present</div>
+      <div class="timeline-company">Arca Technologies LLC</div>
+      <div class="timeline-role">Finance / Accounting Manager</div>
+      <div class="timeline-industry">Electronic Equipment, Devices, Systems & Software · Dubai, UAE</div>
+      <div class="timeline-body">Leading Group Finance and Accounts across the full spectrum — from monthly financial statement finalization and cash flow management to SAP HANA implementation, budgets, tax compliance, and audit coordination.</div>
+      <div class="timeline-achievements">
+        <div class="ta-item">Directed full SAP HANA implementation — migrating from MS Excel, redesigning Chart of Accounts and all financial reports</div>
+        <div class="ta-item">Leading Finance Department with full responsibility: operations, reporting, compliance, payroll, and corporate legal matters</div>
+        <div class="ta-item">Deep expertise in IFRS, Corporate Tax, Excise Tax, VAT, customs and logistics regulations</div>
+        <div class="ta-item">Feasibility studies and profitability assessments for new product lines and market expansion</div>
+      </div>
+      <div class="timeline-tags"><span class="timeline-tag">SAP HANA</span><span class="timeline-tag">Corporate Tax</span><span class="timeline-tag">IFRS</span><span class="timeline-tag">Group Finance</span><span class="timeline-tag">VAT</span></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">April 2018 – June 2025 · 7 Years</div>
+      <div class="timeline-company">Rockford Xellerix LLC</div>
+      <div class="timeline-role">Senior Finance / Accounting Manager</div>
+      <div class="timeline-industry">Defense, Aerospace & Marine Wiring & Interconnect Solutions · Abu Dhabi & Dubai, UAE</div>
+      <div class="timeline-body">Led Group Finance across Abu Dhabi and Dubai for the UAE's only independent defense-grade wiring solutions provider. Managed a complete manufacturing factory setup, full ERP migration, and secured significantly improved EU supplier credit lines.</div>
+      <div class="timeline-achievements">
+        <div class="ta-item">Implemented CETEC ERP — full migration from Pegasus, custom Chart of Accounts, reports, and processes</div>
+        <div class="ta-item">Achieved 50% improved credit limits with EU suppliers through strategic financial improvements</div>
+        <div class="ta-item">Delivered 15% overhead cost reduction via robust internal controls and cost monitoring systems</div>
+        <div class="ta-item">Led setup of manufacturing factory in Dubai — coordinating directly with government authorities</div>
+      </div>
+      <div class="timeline-tags"><span class="timeline-tag">CETEC ERP</span><span class="timeline-tag">Pegasus Migration</span><span class="timeline-tag">Manufacturing</span><span class="timeline-tag">Defense Sector</span><span class="timeline-tag">Cost Reduction</span></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">April 2017 – April 2018 · 1 Year</div>
+      <div class="timeline-company">Steel Wood Industries FZCO</div>
+      <div class="timeline-role">Senior Accountant</div>
+      <div class="timeline-industry">Only Wood Board Production Facility in GCC & Middle East · Dubai, UAE</div>
+      <div class="timeline-body">Managed Finance & Accounts from the Dubai HQ including payroll, financial statements, cash flow, budgets, corporate sales strategy, and KPI variance analysis for the GCC's unique wood board production facility.</div>
+      <div class="timeline-achievements">
+        <div class="ta-item">Multi-currency cash flow management across 4 currencies</div>
+        <div class="ta-item">ERP reporting improvements and new payroll controls implementation</div>
+      </div>
+      <div class="timeline-tags"><span class="timeline-tag">FZCO</span><span class="timeline-tag">Manufacturing</span><span class="timeline-tag">Multi-currency</span><span class="timeline-tag">VAT Compliance</span></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">October 2010 – April 2017 · 6.5 Years</div>
+      <div class="timeline-company">Al-Sayyad Group of Companies</div>
+      <div class="timeline-role">Accounting Manager</div>
+      <div class="timeline-industry">Group of Companies · UAE</div>
+      <div class="timeline-body">Managed Group Finance & Accounts including consolidated financial statements, budgeting, payroll, variance analysis, and complete AP/AR cycles across a diversified group.</div>
+      <div class="timeline-achievements">
+        <div class="ta-item">Consolidated financial statements across multiple group entities</div>
+        <div class="ta-item">Established robust custody and control procedures for assets, loans & debt facilities</div>
+      </div>
+      <div class="timeline-tags"><span class="timeline-tag">Group Consolidation</span><span class="timeline-tag">WPS</span><span class="timeline-tag">Budgeting</span><span class="timeline-tag">MIS Reporting</span></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2004 – 2010 · Pakistan</div>
+      <div class="timeline-company">Earlier Career</div>
+      <div class="timeline-role">Finance & Audit Roles</div>
+      <div class="timeline-industry">Sugar Manufacturing · Investment Brokerage · Capital Markets</div>
+      <div class="timeline-body">Built the foundation of financial excellence through senior roles at Tandlianwala Sugar Mills, Escorts Capital (Investment Banking), Trust Capital (Brokerage), and 4 years article ship at RASG Chartered Accountants covering external and internal audits.</div>
+      <div class="timeline-tags"><span class="timeline-tag">Investment Banking</span><span class="timeline-tag">Brokerage</span><span class="timeline-tag">External Audit</span><span class="timeline-tag">Sugar Manufacturing</span></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">Capabilities</div>
+  <div class="section-title">Skills & <span>Proficiency</span></div>
+  <div class="section-line"></div>
+  <div class="skills-grid">
+    <div>
+      <div class="skill-group-title">Finance & Accounting</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Financial Statements & Reporting (IFRS/IAS)</span><span class="skill-bar-pct">98%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.98"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Cash Flow & Forecasting</span><span class="skill-bar-pct">97%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.97"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Budgeting & Variance Analysis</span><span class="skill-bar-pct">96%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.96"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">UAE Taxation (VAT/CT/Excise)</span><span class="skill-bar-pct">95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.95"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Group Consolidation</span><span class="skill-bar-pct">93%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.93"></div></div></div>
+    </div>
+    <div>
+      <div class="skill-group-title">ERP & Technology</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">SAP Business One & HANA</span><span class="skill-bar-pct">95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.95"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Odoo ERP (Full Suite)</span><span class="skill-bar-pct">92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.92"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">CETEC / Pegasus / QuickBooks</span><span class="skill-bar-pct">90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.90"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">IT Infrastructure & Networking</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.85"></div></div></div>
+      <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-bar-name">Advanced MS Excel & Office</span><span class="skill-bar-pct">97%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="0.97"></div></div></div>
+    </div>
+  </div>
+  <div style="margin-top:3rem;">
+    <div class="skill-group-title" style="margin-bottom:1.5rem;">All Competencies</div>
+    <div class="tags-cloud">
+      <span class="skill-tag">Management & MIS Reporting</span><span class="skill-tag">Bank Facility Management</span><span class="skill-tag">Financial Analysis</span><span class="skill-tag">Cash Flow Projections</span><span class="skill-tag">SOP Development</span><span class="skill-tag">Internal Audits</span><span class="skill-tag">External Audits</span><span class="skill-tag">Budgeting</span><span class="skill-tag">Variance Analysis</span><span class="skill-tag">SAP Business One</span><span class="skill-tag">SAP HANA</span><span class="skill-tag">Odoo</span><span class="skill-tag">CETEC</span><span class="skill-tag">QuickBooks</span><span class="skill-tag">Tally</span><span class="skill-tag">Zoho Books</span><span class="skill-tag">Pegasus</span><span class="skill-tag">Peachtree</span><span class="skill-tag">VAT Compliance</span><span class="skill-tag">Corporate Tax</span><span class="skill-tag">Excise Tax</span><span class="skill-tag">Inventory Management</span><span class="skill-tag">Asset Valuation</span><span class="skill-tag">IFRS</span><span class="skill-tag">IAS</span><span class="skill-tag">US GAAP</span><span class="skill-tag">Group Consolidation</span><span class="skill-tag">Cost Reduction</span><span class="skill-tag">AP & AR</span><span class="skill-tag">Operations Management</span><span class="skill-tag">Payroll & Leave</span><span class="skill-tag">Business Valuation</span><span class="skill-tag">CRM Modules</span><span class="skill-tag">Procurement</span><span class="skill-tag">Warehouse Mgmt</span><span class="skill-tag">Server Setup</span><span class="skill-tag">Firewall Config</span><span class="skill-tag">NAS Storage</span><span class="skill-tag">CCTV Systems</span><span class="skill-tag">IT Asset Sales</span><span class="skill-tag">WPS Compliance</span><span class="skill-tag">Arabic (Working)</span>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-label">Impact</div>
+  <div class="section-title">Key <span>Achievements</span></div>
+  <div class="section-line"></div>
+  <div class="achievement-grid">
+    <div class="achievement-card"><div class="ach-num">20<span class="ach-unit">+</span></div><div class="ach-label">Years Total Professional Experience</div></div>
+    <div class="achievement-card"><div class="ach-num">15<span class="ach-unit">%</span></div><div class="ach-label">Overhead Cost Reduction at Rockford</div></div>
+    <div class="achievement-card"><div class="ach-num">50<span class="ach-unit">%</span></div><div class="ach-label">Better EU Supplier Credit Limits Achieved</div></div>
+    <div class="achievement-card"><div class="ach-num">8<span class="ach-unit">+</span></div><div class="ach-label">ERP Platforms Implemented / Managed</div></div>
+    <div class="achievement-card"><div class="ach-num">2×</div><div class="ach-label">High Performer Award (2023 & 2024)</div></div>
+    <div class="achievement-card"><div class="ach-num">4</div><div class="ach-label">Major ERP Migrations Successfully Led</div></div>
+    <div class="achievement-card"><div class="ach-num">3</div><div class="ach-label">Professional Qualifications (CPA · CPAA · ACCA)</div></div>
+    <div class="achievement-card"><div class="ach-num">5+</div><div class="ach-label">Industries Served Across UAE & GCC</div></div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Get In Touch</div>
+  <div class="section-title">Ready to <span>Transform</span><br>Your Business?</div>
+  <div class="section-line"></div>
+  <div class="contact-wrap">
+    <div>
+      <p style="font-size:0.92rem;color:var(--gray-light);line-height:1.9;margin-bottom:2.5rem;">Whether you need a Finance Manager, ERP implementation expert, or complete IT infrastructure setup — I bring 20+ years of proven results to your business. Available for full-time roles, consulting projects, and retainer engagements across the UAE and GCC.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.32 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/></svg></div>
+          <div><div class="contact-label">Phone / WhatsApp</div><div class="contact-value"><a href="tel:+971547321652">+971 54 732 1652</a></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:abdus82s@gmail.com">abdus82s@gmail.com</a></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="contact-label">Location</div><div class="contact-value">Dubai, United Arab Emirates</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div><div class="contact-label">Availability</div><div class="contact-value">Open to Consulting & Full-Time Roles</div></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Company / Your Name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" placeholder="ERP Implementation / Finance Consulting / IT Setup ...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Describe your requirement and I will get back to you within 24 hours."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleFormSubmit()">Send Message</button>
+        <div class="form-note">Or reach directly via WhatsApp: +971 54 732 1652</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ABDUS SUBHAN</div>
+  <div class="footer-copy">© 2025 Abdus Subhan. All Rights Reserved.</div>
+  <div class="footer-tagline">Dubai · UAE · GCC</div>
+</footer>
+
+<script>
+// Tab switching
+function showModule(id) {
+  document.querySelectorAll('.module-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('mod-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Skill bar animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+        bar.style.transform = 'scaleX(' + bar.dataset.pct + ')';
+        bar.classList.add('animated');
+      });
+    }
+  });
+}, { threshold: 0.3 });
+const skillsSection = document.getElementById('skills');
+if (skillsSection) observer.observe(skillsSection);
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('main-nav').style.padding = window.scrollY > 50 ? '0.8rem 5rem' : '1.1rem 5rem';
+});
+
+// Form submit
+function handleFormSubmit() {
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = 'Message Sent ✓';
+  btn.style.background = '#4ecb8d';
+  btn.style.color = '#0a1a10';
+  setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; btn.style.color = ''; }, 3000);
+}
+
+// Smooth reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.expertise-card, .erp-vendor, .it-item, .achievement-card, .timeline-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  revealObserver.observe(el);
+});
+</script>
+</body>
+</html>
